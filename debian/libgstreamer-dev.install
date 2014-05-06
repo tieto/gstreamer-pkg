@@ -1,8 +1,8 @@
-debian/tmp/usr/include
-debian/tmp/usr/lib/*/*.so
-debian/tmp/usr/lib/*/pkgconfig
-debian/tmp/usr/share/aclocal
-debian/tmp/usr/share/gir-*
-debian/tmp/usr/bin/gst-codec-info-@GST_ABI@
-debian/dh_gstscancodecs usr/bin
-debian/tmp/usr/share/man/man1/dh_gstscancodecs.1
+debian/tmp/opt/gstreamer1.4/include
+debian/tmp/opt/gstreamer1.4/lib/*/*.so
+debian/tmp/opt/gstreamer1.4/lib/*/pkgconfig
+debian/tmp/opt/gstreamer1.4/share/aclocal
+debian/tmp/opt/gstreamer1.4/share/gir-*
+debian/tmp/opt/gstreamer1.4/bin/gst-codec-info-@GST_ABI@
+debian/dh_gstscancodecs opt/gstreamer1.4/bin
+debian/tmp/opt/gstreamer1.4/share/man/man1/dh_gstscancodecs.1

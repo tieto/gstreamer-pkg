@@ -1,5 +1,5 @@
-debian/tmp/usr/bin/gst-inspect-@GST_ABI@
-debian/tmp/usr/bin/gst-launch-@GST_ABI@
-debian/tmp/usr/bin/gst-typefind-@GST_ABI@
+debian/tmp/opt/gstreamer1.4/bin/gst-inspect-@GST_ABI@
+debian/tmp/opt/gstreamer1.4/bin/gst-launch-@GST_ABI@
+debian/tmp/opt/gstreamer1.4/bin/gst-typefind-@GST_ABI@
 
 

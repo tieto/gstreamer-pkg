@@ -192,6 +192,7 @@ clean::
 	-rm -rf $(CURDIR)/fake-home
 
 common_conf_flags = \
+	--prefix=/opt/gstreamer1.4 \
 	--disable-failing-tests \
 	--disable-examples \
 	--enable-DEBUG \
@@ -226,7 +227,7 @@ common-install-indep::
 
 DEB_DH_MAKESHLIBS_ARGS_$(gst_lib) += -X "/usr/lib/$(DEB_HOST_MULTIARCH)/gstreamer-$(gst_abi)" -V $(gst_shlibs_dep) -- -c4
 DEB_INSTALL_DOCS_ALL += debian/README.Debian NEWS
-DEB_SHLIBDEPS_INCLUDE += debian/$(gst_lib)/usr/lib/$(DEB_HOST_MULTIARCH)
+DEB_SHLIBDEPS_INCLUDE += debian/$(gst_lib)/opt/gstreamer1.4/lib/$(DEB_HOST_MULTIARCH)
 
 # override shlibs for libraries from this source before computing dependencies
 # of packages generated from this source; we already have inter-dependencies
@@ -248,7 +249,7 @@ common-binary-predeb-arch::
 	-rm -f debian/shlibs.local
 
 install/$(gst_lib_dev)::
-	gcc -o debian/tmp/usr/bin/gst-codec-info-1.0 debian/gst-codec-info.c $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) `pkg-config --libs --cflags glib-2.0 gthread-2.0 gmodule-no-export-2.0 gobject-2.0` debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/libgstreamer-1.0.so -Idebian/tmp/usr/include/gstreamer-1.0
-	perldoc -o man debian/dh_gstscancodecs > debian/tmp/usr/share/man/man1/dh_gstscancodecs.1
+	gcc -o debian/tmp/opt/gstreamer1.4/bin/gst-codec-info-1.0 debian/gst-codec-info.c $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) `pkg-config --libs --cflags glib-2.0 gthread-2.0 gmodule-no-export-2.0 gobject-2.0` debian/tmp/opt/gstreamer1.4/lib/$(DEB_HOST_MULTIARCH)/libgstreamer-1.0.so -Idebian/tmp/opt/gstreamer1.4/include/gstreamer-1.0
+	perldoc -o man debian/dh_gstscancodecs > debian/tmp/opt/gstreamer1.4/share/man/man1/dh_gstscancodecs.1
 
 .PHONY: maint

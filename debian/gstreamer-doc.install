@@ -1,1 +1,1 @@
-debian/tmp/usr/share/doc/@GST_PKGNAME@-doc
+debian/tmp/opt/gstreamer1.4/share/doc/@GST_PKGNAME@-doc
