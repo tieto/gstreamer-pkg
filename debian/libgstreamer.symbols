@@ -398,6 +398,8 @@ libgstcontroller-1.0.so.0 libgstreamer1.0-0 #MINVER#
  gst_timed_value_control_source_unset_all@Base 1.0.0
  gst_trigger_control_source_get_type@Base 1.0.0
  gst_trigger_control_source_new@Base 1.0.0
+libgstcoreelements.so libgstreamer1.4-0 #MINVER#
+ gst_plugin_desc@Base 1.4~really1.3.1-1
 libgstnet-1.0.so.0 libgstreamer1.0-0 #MINVER#
  gst_buffer_add_net_address_meta@Base 1.0.0
  gst_net_address_meta_api_get_type@Base 1.0.0
