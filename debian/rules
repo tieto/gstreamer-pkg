@@ -25,8 +25,8 @@ gst_version=$(shell echo $(version) | cut -d '-' -f 1)
 gst_major=1
 gst_minor=0
 gst_abi=$(gst_major).$(gst_minor)
-gst_pkgname=gstreamer$(gst_abi)
-gst_lib_prefix=libgstreamer$(gst_abi)
+gst_pkgname=gstreamer1.4
+gst_lib_prefix=lib$(gst_pkgname)
 # gstreamer library package names
 gst_lib=$(gst_lib_prefix)-0
 gst_lib_dev=$(gst_lib_prefix)-dev
