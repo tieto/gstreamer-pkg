@@ -227,7 +227,7 @@ common-install-indep::
 
 DEB_DH_MAKESHLIBS_ARGS_$(gst_lib) += -X "/usr/lib/$(DEB_HOST_MULTIARCH)/gstreamer-$(gst_abi)" -V $(gst_shlibs_dep) -- -c4
 DEB_INSTALL_DOCS_ALL += debian/README.Debian NEWS
-DEB_SHLIBDEPS_INCLUDE += debian/$(gst_lib)/opt/gstreamer1.4/lib/$(DEB_HOST_MULTIARCH)
+DEB_SHLIBDEPS_INCLUDE += opt/gstreamer1.4/lib/$(DEB_HOST_MULTIARCH)
 
 # override shlibs for libraries from this source before computing dependencies
 # of packages generated from this source; we already have inter-dependencies
