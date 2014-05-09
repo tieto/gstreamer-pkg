@@ -1,4 +1,4 @@
-libgstbase-1.0.so.0 libgstreamer1.0-0 #MINVER#
+libgstbase-1.0.so.0 libgstreamer1.4-0 #MINVER#
  gst_adapter_available@Base 1.0.0
  gst_adapter_available_fast@Base 1.0.0
  gst_adapter_clear@Base 1.0.0
@@ -277,7 +277,7 @@ libgstbase-1.0.so.0 libgstreamer1.0-0 #MINVER#
  gst_type_find_helper_for_data@Base 1.0.0
  gst_type_find_helper_for_extension@Base 1.0.0
  gst_type_find_helper_get_range@Base 1.0.0
-libgstcheck-1.0.so.0 libgstreamer1.0-0 #MINVER#
+libgstcheck-1.0.so.0 libgstreamer1.4-0 #MINVER#
  _fail_unless@Base 1.0.0
  _gst_check_expecting_log@Base 1.0.0
  _gst_check_raised_critical@Base 1.0.0
@@ -376,7 +376,7 @@ libgstcheck-1.0.so.0 libgstreamer1.0-0 #MINVER#
  tr_msg@Base 1.0.0
  tr_rtype@Base 1.0.0
  tr_tcname@Base 1.0.0
-libgstcontroller-1.0.so.0 libgstreamer1.0-0 #MINVER#
+libgstcontroller-1.0.so.0 libgstreamer1.4-0 #MINVER#
  gst_argb_control_binding_get_type@Base 1.0.0
  gst_argb_control_binding_new@Base 1.0.0
  gst_direct_control_binding_get_type@Base 1.0.0
@@ -400,7 +400,7 @@ libgstcontroller-1.0.so.0 libgstreamer1.0-0 #MINVER#
  gst_trigger_control_source_new@Base 1.0.0
 libgstcoreelements.so libgstreamer1.4-0 #MINVER#
  gst_plugin_desc@Base 1.4~really1.3.1-1
-libgstnet-1.0.so.0 libgstreamer1.0-0 #MINVER#
+libgstnet-1.0.so.0 libgstreamer1.4-0 #MINVER#
  gst_buffer_add_net_address_meta@Base 1.0.0
  gst_net_address_meta_api_get_type@Base 1.0.0
  gst_net_address_meta_get_info@Base 1.0.0
@@ -415,7 +415,7 @@ libgstnet-1.0.so.0 libgstreamer1.0-0 #MINVER#
  gst_net_time_packet_serialize@Base 1.0.0
  gst_net_time_provider_get_type@Base 1.0.0
  gst_net_time_provider_new@Base 1.0.0
-libgstreamer-1.0.so.0 libgstreamer1.0-0 #MINVER#
+libgstreamer-1.0.so.0 libgstreamer1.4-0 #MINVER#
  GST_CAT_BUFFER@Base 1.0.0
  GST_CAT_BUFFER_LIST@Base 1.0.0
  GST_CAT_BUS@Base 1.0.0
