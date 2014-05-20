@@ -80,7 +80,7 @@ debian/control:: debian/control.in debian/rules
 	cat $< | \
 		sed 's/@GST_VERSION@/$(gst_version)/g' | \
 		sed 's/@GST_PKGNAME@/$(gst_pkgname)/g' | \
-		sed 's/@GST_ABI@/$(gst_abi)/g' | \
+		sed 's/@GST_ABI@/1\.4/g' | \
 		sed 's/@GST_LIB_PREFIX@/$(gst_lib_prefix)/g' | \
 		sed 's/@GST_LIB@/$(gst_lib)/g' | \
 		sed 's/@GST_LIB_DEV@/$(gst_lib_dev)/g' \
